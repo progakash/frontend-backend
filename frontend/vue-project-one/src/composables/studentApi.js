@@ -2,7 +2,7 @@ import {ref} from 'vue'
 import axios from 'axios'
 
 export default function useStudent() {
-    const url = "api url";
+    const url = "http://127.0.0.1:8000/api/student";
     const studentData = ref([]);
     const error = ref(null);
 
@@ -15,6 +15,7 @@ export default function useStudent() {
             console.log(resp.data);
             studentData.value = resp.data;
         } catch (err) {
+            console.log('error', err);
             error.value = err;
         }
     }
