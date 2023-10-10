@@ -10,7 +10,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        feature: resolve(__dirname/feature, 'feature/index.html'),
+        feature: resolve(__dirname, 'src/feature/index.html'),
       }
     }
   },
