@@ -1,7 +1,11 @@
 <template>
-    <div>home component</div>
+    <div>{{ daugter }}</div>
 </template>
 
-<script>
+<script setup>
+import { computed } from 'vue';
+import store from '../stores';
+
+const daugter = computed( () => store.state.name)
 
 </script>
