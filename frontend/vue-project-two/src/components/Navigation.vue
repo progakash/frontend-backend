@@ -1,7 +1,7 @@
 <template>
     <div>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
+        <router-link :to="{name: 'home'}">Home</router-link>
+        <router-link :to="{name: 'about'}">About</router-link>
     </div>
 </template>
 
