@@ -14,4 +14,8 @@ createApp(App)
         console.log("global - beforeach clalled");
         console.log("Form: ", from);
         console.log("To:", to);
+        //return false //for cancel
+        if(to.path === '/') {
+            router.push('/about');
+        }
     })
