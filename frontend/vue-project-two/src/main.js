@@ -8,3 +8,10 @@ createApp(App)
     .use(router)
     .use(store)
     .mount('#app')
+
+
+    router.beforeEach((to, from) => {
+        console.log("global - beforeach clalled");
+        console.log("Form: ", from);
+        console.log("To:", to);
+    })
