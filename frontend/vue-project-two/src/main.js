@@ -15,7 +15,7 @@ createApp(App)
         console.log("Form: ", from);
         console.log("To:", to);
         //return false //for cancel
-        if(to.path === '/') {
-            router.push('/about');
-        }
+        // if(to.path === '/') {
+        //     router.push('/about');
+        // }
     })

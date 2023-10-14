@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../pages/Home.vue'
 import About from '../pages/About.vue'
+import FeatureOne from '../pages/FeatureOne.vue'
 
 const routes = [
     {
@@ -12,6 +13,18 @@ const routes = [
         path: '/about',
         name: 'about',
         component: About
+    },
+    {
+        path: '/content-management',
+        name: 'content',
+        component: About,
+        childred: [
+            {
+                path: 'feature-one',
+                name: 'home1',
+                component: FeatureOne
+            }
+        ]
     }
 ];
 
