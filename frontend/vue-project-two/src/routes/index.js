@@ -3,6 +3,7 @@ import Home from '../pages/Home.vue'
 import About from '../pages/About.vue'
 import Layout from '../layouts/Layout.vue'
 import FeatureOne from '../pages/FeatureOne.vue'
+import FeatureTwo from '../pages/FeatureTwo.vue'
 
 const routes = [
     {
@@ -33,6 +34,11 @@ const routes = [
                 path: 'feature-one',
                 name: 'home3',
                 component: FeatureOne
+            },
+            {
+                path: 'feature-two',
+                name: 'home4',
+                component: FeatureTwo
             }
         ]
     }
