@@ -1,4 +1,7 @@
 <template>
-    <h1>Repository template</h1>
+    <h2>{{ nameObj.firstName }}</h2>
 </template>
-<script></script>
+<script setup>
+import { useName } from '../composables/name.js'
+const nameObj = useName();
+</script>
